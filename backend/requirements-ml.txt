@@ -1,0 +1,17 @@
+# Тяжёлые ML-зависимости (Python 3.10–3.12). Ставить отдельно:
+#   pip install -r requirements-ml.txt
+# Без них сервис работает в деградированном режиме (см. README).
+
+# Основной OCR-движок (PP-OCRv4/v5, локально, CPU)
+paddlepaddle>=2.6,<3.0
+paddleocr>=2.7
+
+# NER русских ФИО на CPU
+natasha>=1.6
+
+# Эмбеддинги для гибридного RAG (BM25 работает и без этого)
+sentence-transformers>=2.7
+torch>=2.2
+
+# Загрузка бенчмарка MTSAIR/MWS-Vision-Bench
+datasets>=2.19

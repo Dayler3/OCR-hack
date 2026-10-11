@@ -1,0 +1,21 @@
+{
+  "name": "dimon-hacaton",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Цифровой секретарь онлайн-деканата — монорепо (FastAPI + React)",
+  "workspaces": [
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:backend": "node scripts/dev.mjs --only backend",
+    "dev:frontend": "node scripts/dev.mjs --only frontend",
+    "build": "npm run build --workspace frontend",
+    "preview": "npm run preview --workspace frontend",
+    "test": "node scripts/dev.mjs --pytest",
+    "batch": "node scripts/dev.mjs --batch",
+    "samples": "node scripts/dev.mjs --samples",
+    "models": "node scripts/dev.mjs --models",
+    "dataset": "node scripts/dev.mjs --dataset"
+  }
+}

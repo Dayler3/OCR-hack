@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node
+node_modules/
+frontend/dist/
+*.local
+
+# IDE
+.idea/
+.vscode/
+
+# Модели и кэш (предскачиваются scripts/download_models.py)
+models_cache/
+.paddlex/
+.paddleocr/
+~/
+*.paddleocr/
+
+# Данные (скачиваются scripts/download_dataset.py / генерируются make_samples.py)
+backend/data/mws_bench/
+backend/data/samples/
+results.json
+backend/results.json
+
+# ОС
+Thumbs.db
+.DS_Store
+
+# Логи
+*.log
